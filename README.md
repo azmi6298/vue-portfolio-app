@@ -1,24 +1,16 @@
-# portfolio-app
+# Portfolio App
 
-## Project setup
-```
-npm install
-```
+A SPA portfolio app built on VueJS. I also make use of some JS library like fullPage.js and GSAP.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Things to do
+- [ ] Add responsive navbar
+- [ ] Fill up the "past work" section
+- [ ] Make a theme switcher
+- [ ] Redesigning "what i do" section
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Changelog
 
-### Lints and fixes files
-```
-npm run lint
-```
+**14 June 2020**
+* Initial commit
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
