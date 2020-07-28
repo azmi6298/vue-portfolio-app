@@ -3,7 +3,7 @@
     <div class="text-lg bg-gray-900 text-gray-100">
       <full-page ref="fullpage" :options="options" id="fullpage">
         <div class="section">
-          <div class="container px-16 lg:px-0 mx-auto mt-10 flex flex-row justify-between">
+          <div class="container px-8 lg:px-0 mx-auto flex flex-row justify-between">
               <div class="text-7xl mt-10">
                 <p class="hello1 text-gray-100 pointer-events-none">Hello</p>
                 <p class="hello2 text-gray-100 pointer-events-none text-opacity-75">Hello</p>
@@ -72,6 +72,9 @@
             <h1>Past work section</h1>
           </div>
         </div>
+        <div class="section fp-auto-height">
+          <Footer />
+        </div>
       </full-page>
     </div>
   </div>
@@ -79,8 +82,15 @@
 
 <script>
 import { TimelineMax } from "gsap";
-
+import Footer from "./Footer"
 export default {
+  data() {
+    return {
+      options: {
+      }
+    }
+  },
+  components: { Footer },
   mounted() {
     const hello1 = document.querySelector('.hello1');
     const hello2 = document.querySelector('.hello2');
@@ -100,14 +110,6 @@ export default {
     tl.fromTo(hello3, 0.6, {autoAlpha: 0}, {autoAlpha: 1}, 2.4)
     tl.fromTo(hello4, 0.6, {autoAlpha: 0}, {autoAlpha: 1}, 2.8)
     tl.fromTo(hello5, 0.6, {autoAlpha: 0}, {autoAlpha: 1}, 3.2);
-  },
-  data() {
-    return {
-      options: {
-        anchors: ['hello', 'what_i_do', 'past_work'],
-        menu: '#menu',
-      }
-    }
   },
 }
 </script>

@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="m-0 p-0">
     <Home/>
   </div>
 </template>
 
 <script>
-import Home from "./components/Home.vue"
+import Home from "./components/Home"
 
 export default {
   name: 'Portfolio',
